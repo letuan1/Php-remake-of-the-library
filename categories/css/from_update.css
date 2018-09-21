@@ -269,3 +269,15 @@ input[type=submit]:active, input[type=submit]:focus {
     -moz-box-shadow:0px -1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
     box-shadow:0px -1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
 }
+
+
+.button3 {
+    background-color: white;
+    color: black;
+    border: 2px solid #f44336;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
