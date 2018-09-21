@@ -18,4 +18,14 @@ class Book extends BaseModel
         return $result;
     }
 
+    public function update($name, $id) {
+        $sql = "UPDATE books SET `name_books`= '$name'WHERE id = $id";
+        $query = $this->conn->exec($sql);
+    }
+
+    public function insert($name, $id) {
+        $sql = "INSERT INTO books(name_books, id_categries) VALUES ('$name', $id)";
+        $this->conn->query($sql);
+    }
+
 }

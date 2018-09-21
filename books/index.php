@@ -63,6 +63,8 @@ $books = $book->jont();
         </li>
     </ul>
 </div>
+<h2 style="color: yellow"><a href="layout/insert.php" target="_blank" style="color: yellow">Add one element to the student table</a></h2>
+
 <table class="responstable">
 
     <tr>
@@ -77,7 +79,7 @@ $books = $book->jont();
             <td><?php echo $book['id'] ?></td>
             <td><?php echo $book['name_books'] ?></td>
             <td><?php echo $book['name'] ?></td>
-            <td><a href="#">Update</a></td>
+            <td><a href="layout/update.php?id=<?php echo $book['id'];?>">Update</a></td>
             <td><a href="layout/delete.php?id=<?php echo $book['id']; echo $book['id_categries']?>">Delete</a></td>
 
         </tr>
